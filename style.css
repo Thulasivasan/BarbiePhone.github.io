@@ -1,0 +1,123 @@
+body{
+    background: rgb(23, 137, 178);
+    transition: 400ms;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    
+    
+} 
+h1 {
+    font-size: 72px;
+    background: linear-gradient( rgb(117, 21, 168), rgb(235, 91, 91) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 15em;
+    height: 20em;
+    padding: 3em;
+    background: pink;
+    margin-inline: auto;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 11% 100%);
+    border-radius: 4% 4% 20% 20%;
+}
+img{
+    
+    width: 120%;
+    border-radius: 30% 30% 30% 30%;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+    box-shadow: 0 0 15px rgb(123, 112, 120);
+}
+.body{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    background-color: #2196F3;
+    padding: 3em;
+    overflow: hidden;
+    width: 15em;
+    height: 20em;
+    background: pink;
+    margin-inline: auto;
+    /* clip-path: polygon(11% 0, 89% 0, 100% 100%, 0 100%); */
+    clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+    border-radius: 20% 20% 50% 50%;
+}
+
+.body>*{
+    background: rgb(255, 0, 136);
+    display: flex;
+    flex-direction: row;
+    color:rgb(246, 40, 150);
+    border:0;
+    border-radius: 1em;
+    cursor: pointer;
+    width:5em;
+    height: 4em;
+}
+.left-btns{
+    transform: skew(5deg, 5deg);
+    box-shadow: 2px 2px 5px black;
+}
+.right-btns{
+    transform: skew(-5deg, -5deg);
+    box-shadow: -2px 2px 5px black;
+}
+.center-btns{
+    box-shadow: 0px 2px .4em black;
+}
+button:nth-child(10){
+    border-radius: 20% 20% 20% 60%;
+}
+button:nth-child(12){
+    border-radius: 20% 20% 70% 20%;
+}
+button{
+    transition: transform 200ms ease-in-out;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.head:before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    width: 11em;
+    height: 1em;
+    background: rgb(123, 112, 120);
+    /* border-radius: 0 0 50% 50%; */
+    border-radius: 80% 80% 0% 0%;
+    overflow: hidden;
+}
+.body:before{
+    content: "";
+    position: absolute;
+    top:0;
+    width: 11em;
+    margin-left: 5rem;
+    height: 1em;
+    background: rgb(123, 112, 120);
+    border-radius: 0% 0% 80% 80%;
+    overflow: hidden;
+    border-top:5px solid #2196F3;
+}
+p{
+    font-size: 25px;
+    margin-block: auto;
+    font-weight: 800;
+    color: #fff;
+
+}
+span{
+    color: #fff;
+    font-weight: 600;
+    margin-block: auto;
+    margin-left: 10px;
+
+}
